@@ -43,6 +43,10 @@ public class PnC_InteractiveItem : MonoBehaviour
     {
         print(s);
     }
+    public void CallPuzzle(PuzzleBase puzzle)
+    {
+        puzzle.gameObject.SetActive(true);
+    }
     public void DestroyButtons()
     {
         for(int j = 0; j < 3; j++) if(buttons[j] != null) Destroy(buttons[j]);

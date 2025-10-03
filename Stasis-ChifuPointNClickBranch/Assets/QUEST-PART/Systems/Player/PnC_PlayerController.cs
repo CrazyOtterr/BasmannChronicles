@@ -82,7 +82,7 @@ public class PnC_PlayerController : MonoBehaviour
 
     private void HandleMovement() {
         if (currentMovementType == MovementType.None) {
-            physicalBody.velocity = Vector2.zero;
+            physicalBody.linearVelocity = Vector2.zero;
             //animator.SetAnimation(idleAnimation, false);
             return;
         }
@@ -92,7 +92,7 @@ public class PnC_PlayerController : MonoBehaviour
         Vector2 direction = targetPosition - (Vector2)transform.position;
         //Modify direction to account for perspective
         direction.y /= roomPerspectiveYModifier;
-        physicalBody.velocity = movementSpeed * direction.normalized * new Vector2(1, roomPerspectiveYModifier);
+        physicalBody.linearVelocity = movementSpeed * direction.normalized * new Vector2(1, roomPerspectiveYModifier);
         //animator.SetAnimation(direction.normalized.x > 0 ? walkRightAnimation : walkLeftAnimation, false);
         //PlayWalkingSounds();
         if (Vector2.Distance(targetPosition, transform.position) < minTargetDistance) {
