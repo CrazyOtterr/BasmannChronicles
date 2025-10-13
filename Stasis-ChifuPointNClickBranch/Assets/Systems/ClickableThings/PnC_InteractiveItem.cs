@@ -45,9 +45,9 @@ public class PnC_InteractiveItem : MonoBehaviour
     {
         print(s);
     }
-    public void OpenPuzzle()
+    public void CallPuzzle(PuzzleBase puzzle)
     {
-        Instantiate(_puzzlePrefab, GameObject.Find("For UI canvas").transform);
+        puzzle.gameObject.SetActive(true);
     }
     public void DestroyButtons()
     {
