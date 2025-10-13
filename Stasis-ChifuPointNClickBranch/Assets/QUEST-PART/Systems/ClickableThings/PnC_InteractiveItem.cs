@@ -13,6 +13,8 @@ public class PnC_InteractiveItem : MonoBehaviour
     public Transform targetPosition;
     public GameObject buttonsPrefab;
     [HideInInspector] public List<GameObject> buttons = new List<GameObject>();
+
+    [SerializeField] private Puzzle _puzzlePrefab;
     public async void HandleClick()
     {
         for(int i = 0; i < 3; i++) buttons.Add(null);
@@ -42,6 +44,10 @@ public class PnC_InteractiveItem : MonoBehaviour
     public void PrintSome(string s)
     {
         print(s);
+    }
+    public void OpenPuzzle()
+    {
+        Instantiate(_puzzlePrefab, GameObject.Find("For UI canvas").transform);
     }
     public void DestroyButtons()
     {
