@@ -150,7 +150,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1283882260}
+  - {fileID: 990688172}
   m_Father: {fileID: 2102391910}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -523,8 +523,8 @@ MonoBehaviour:
         m_MethodName: CallPuzzle
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1283882261}
-          m_ObjectArgumentAssemblyTypeName: PuzzleBase, Assembly-CSharp
+          m_ObjectArgument: {fileID: 990688171}
+          m_ObjectArgumentAssemblyTypeName: Puzzle, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Taking
@@ -548,6 +548,7 @@ MonoBehaviour:
   targetPosition: {fileID: 1065886737}
   buttonsPrefab: {fileID: 6392078059320315694, guid: c714cfdff48251a46b987a2991a7479a, type: 3}
   buttons: []
+  _puzzlePrefab: {fileID: 1116211249370966935, guid: 95dee05ee1ac3404da164ebf17486c8e, type: 3}
 --- !u!1 &620880461
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,6 +831,22 @@ MonoBehaviour:
   m_MinRegionArea: 0
   m_HideEditorLogs: 0
   m_NavMeshData: {fileID: 23800000, guid: f908640d7ec2bbe44808d6fc412c217e, type: 2}
+--- !u!114 &990688171 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1116211249370966935, guid: 95dee05ee1ac3404da164ebf17486c8e, type: 3}
+  m_PrefabInstance: {fileID: 1646318470}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5ba506558fd6bc48bc1a49f400305ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &990688172 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4886365382061206400, guid: 95dee05ee1ac3404da164ebf17486c8e, type: 3}
+  m_PrefabInstance: {fileID: 1646318470}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1065886736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,7 +1174,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.2, y: 10.8}
+  m_Size: {x: 12.8, y: 7.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1260,7 +1277,7 @@ PolygonCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 12.8, y: 7.2}
-    newSize: {x: 19.2, y: 10.8}
+    newSize: {x: 12.8, y: 7.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1371,22 +1388,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!224 &1283882260 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1918121766174981720, guid: 95dee05ee1ac3404da164ebf17486c8e, type: 3}
-  m_PrefabInstance: {fileID: 1646318470}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1283882261 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3748975216801897158, guid: 95dee05ee1ac3404da164ebf17486c8e, type: 3}
-  m_PrefabInstance: {fileID: 1646318470}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6cb5163eb77f2644be6531ce92c36e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1386085409
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,6 +1513,10 @@ PrefabInstance:
       value: PuzzleBase
       objectReference: {fileID: 0}
     - target: {fileID: 5505495498404416590, guid: 95dee05ee1ac3404da164ebf17486c8e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660398331513482427, guid: 95dee05ee1ac3404da164ebf17486c8e, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}

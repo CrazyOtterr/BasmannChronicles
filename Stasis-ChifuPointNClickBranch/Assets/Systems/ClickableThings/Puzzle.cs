@@ -18,6 +18,6 @@ public class Puzzle : MonoBehaviour
     {
         _puzzlePanel.transform.DOScale(Vector3.zero, 0.5f).SetEase(Ease.InBack);
 
-        _puzzleBackground.DOFade(0f, 0.5f).OnComplete(() => Destroy(this.gameObject));
+        _puzzleBackground.DOFade(0f, 0.5f).OnComplete(() => gameObject.SetActive(false));
     }
 }

@@ -45,7 +45,7 @@ public class PnC_InteractiveItem : MonoBehaviour
     {
         print(s);
     }
-    public void CallPuzzle(PuzzleBase puzzle)
+    public void CallPuzzle(Puzzle puzzle)
     {
         puzzle.gameObject.SetActive(true);
     }
