@@ -1,71 +1,41 @@
-Stasis-ChifuPointNClickBranch/
-# Unity generated folders
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
+###
+# Unity folders and files
+###
+[Aa]ssets/AssetStoreTools*
 [Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-UserSettings/
-MemoryCaptures/
-Sysinfo.txt
+[Ll]ibrary/
+[Ll]ocal[Cc]ache/
+[Oo]bj/
+[Tt]emp/
+[Uu]nityGenerated/
+# file on crash reports
+sysinfo.txt
+# Unity3D generated meta files
+*.pidb.meta
 
-# Visual Studio / JetBrains Rider
-.vs/
-.idea/
+###
+# VS/MD solution and project files
+###
+[Ee]xportedObj/
+*.booproj
 *.csproj
 *.sln
-*.user
-*.unityproj
-*.pidb
+*.suo
 *.svd
-*.pdb
-*.mdb
-
-# Unity auto-generated files
-*.booproj
-*.pidb.meta
-*.pdb.meta
-*.mdb.meta
-
-# Crash and temporary files
-*.stackdump
-*.tmp
-*.bak
-*.old
-*.orig
-
-# Asset meta data should only be ignored when the corresponding asset is also ignored
-*.meta
-
-# Builds
-*.apk
-*.aab
-*.xcodeproj
-*.xcworkspace
-*.ipa
-*.app
-*.exe
-
-# OS-specific
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Package Manager
-Packages/com.unity.package-manager-ui/
-Packages/packages-lock.json
-
-# Cache
-[Bb]uilds/
-Logs/
-Library/
-Temp/
-obj/
-
-# Other local data
-.vscode/
+*.unityproj
+*.user
 *.userprefs
-*.swp
-*.swo
-*.lock
+*.pidb
+.DS_Store
+
+###
+# OS generated
+###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
